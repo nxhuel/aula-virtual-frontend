@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    list-style: none;
+    font-family: "Times New Roman";
+}
+
+:root {
+    --bg-primary-color: #06213F;
+    --txt-primary-color: #F9F9F9;
+    --txt-secondary-color: #979797;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+}
+
