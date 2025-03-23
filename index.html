@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/header/header.css" />
     <title>IFTS21</title>
   </head>
   <body>
@@ -17,11 +17,44 @@
           .then((data) => (document.getElementById("header").innerHTML = data));
       </script>
       <!-- content -->
-       <!-- sdasasdadsadsasasds -->
+      <!-- card links -->
+      <div class="card-container">
+        <img id="displayImage" src="/assets/images/sobre-nuestra-institucion.png" alt="ifts-21" />
+        <ul>
+          <li
+            onclick="changeImage('/assets/images/sobre-nuestra-institucion.png')"
+          >
+            SOBRE NUESTRA INSTITUCIÓN
+          </li>
+          <li
+            onclick="changeImage('/assets/images/tecnico-en-administracion.png')"
+          >
+            TÉCNICO EN ADMINISTRACIÓN
+          </li>
+          <li
+            onclick="changeImage('/assets/images/tecnico-en-analisis-de-sistemas.png')"
+          >
+            TÉCNICO EN ANALISIS DE SISTEMAS
+          </li>
+          <li
+            onclick="changeImage('/assets/images/aula-virtual.png')"
+          >
+            AULA VIRTUAL
+          </li>
+          <li
+            onclick="changeImage('/assets/images/consultas.png')"
+          >
+            CONSULTAS
+          </li>
+        </ul>
+      </div>
+
       <!-- footer -->
       <footer class="footer">
         <p>Footer</p>
       </footer>
     </div>
   </body>
+
+  <script src="/js/main.js"></script>
 </html>
