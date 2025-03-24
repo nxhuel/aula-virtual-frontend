@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="icon" href="/assets/images/icono-ifts.png" type="image/x-icon" />
+    <!-- exporting styles -->
+    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./components/header/header.css" />
+
     <title>IFTS21</title>
   </head>
   <body>
@@ -16,10 +19,15 @@
           .then((response) => response.text())
           .then((data) => (document.getElementById("header").innerHTML = data));
       </script>
+
       <!-- content -->
       <!-- card links -->
-      <div class="card-container">
-        <img id="displayImage" src="/assets/images/sobre-nuestra-institucion.png" alt="ifts-21" />
+      <div class="card-container-links">
+        <img
+          id="displayImage"
+          src="/assets/images/sobre-nuestra-institucion.png"
+          alt="ifts-21"
+        />
         <ul>
           <li
             onclick="changeImage('/assets/images/sobre-nuestra-institucion.png')"
@@ -36,18 +44,113 @@
           >
             TÉCNICO EN ANALISIS DE SISTEMAS
           </li>
-          <li
-            onclick="changeImage('/assets/images/aula-virtual.png')"
-          >
+          <li onclick="changeImage('/assets/images/aula-virtual.png')">
             AULA VIRTUAL
           </li>
-          <li
-            onclick="changeImage('/assets/images/consultas.png')"
-          >
+
+          <li onclick="changeImage('/assets/images/consultas.png')">
             CONSULTAS
           </li>
         </ul>
       </div>
+
+      <!-- card info -->
+      <div class="card-container-info">
+        <title><h1>INSTITUTO DE FORMACIÓN TÉCNICA N° 21</h1></title>
+        <hr />
+        <figure>
+          <img src="./assets/images/sobre-nuestra-institucion.png" alt="" />
+        </figure>
+        <hr />
+        <div class="text-info">
+          <span class="description">
+            El Instituto de Formación Técnica N° 21 ofrece carreras terciarias
+            gratuitas con títulos oficiales a nivel nacional en articulación con
+            universidades.
+            <br />
+            Las carreras ofrecidas son:
+          </span>
+          <span class="items">
+            <ul>
+              <li>
+                <a href="#"
+                  >TÉCNICO SUPERIOR EN ADMINISTRACIÓN PÚBLICA CON ORIENTACIÓN
+                  MUNICIPAL</a
+                >
+              </li>
+              <li><a href="#">TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</a></li>
+            </ul>
+          </span>
+          <span class="more-info">
+            <div class="calendar">
+              <p>
+                CALENDARIO <br />
+                LECTIVO
+              </p>
+              <figure>
+                <img
+                  src="/assets/images/calendar.png"
+                  alt="calendario ifts 21"
+                />
+              </figure>
+            </div>
+            <div class="info-general">
+              <p>
+                INFORMACIÓN <br />
+                GENERAL
+              </p>
+              <figure>
+                <img
+                  src="/assets/images/more-info.png"
+                  alt="mas información ifts 21"
+                />
+              </figure>
+            </div>
+          </span>
+          <hr />
+          <title><p>Ubicación</p></title>
+          <hr />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509!2d144.96315761531695!3d-37.81410797975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%2C%20Australia!5e0!3m2!1ses!2sar!4v1633923490633!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+          <div class="bus">
+            Líneas: 2 - 5 - 15 - 26 - 65 - 84 - 85 - 86 - 103 - 112 - 132
+            <br />
+            Subte: Línea A
+          </div>
+
+          <title>Facebook</title>
+          <hr />
+          <div class="card-facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+            <p>Seguinos en Facebook</p>
+            <p>
+              Mantente informado sobre todas las novedades y fechas del IFTS 21
+              en Facebook
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card footer -->
+      <!-- asjksfjka -->
 
       <!-- footer -->
       <footer class="footer">
