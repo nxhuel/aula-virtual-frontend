@@ -5,16 +5,16 @@
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 1rem;
-  
+
   hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   .title-main {
     text-align: center;
     font-size: x-large;
-
   }
 
   figure {
@@ -25,12 +25,24 @@
   img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+  }
+
+  .img-institucion {
+    padding: 0.5rem;
+    border: 1px solid #c5c5c5;
   }
 
   .text-info {
     /* background-color: aqua; */
     padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-space {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .items {
@@ -38,10 +50,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     ul {
       width: 100%;
       padding: 0;
+    }
+
+    li {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-weight: bold;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
   }
 
@@ -52,6 +77,8 @@
 
   .title-ubication {
     padding-top: 1.5rem;
+    width: 100%;
+    text-align: start;
   }
 
   iframe {
@@ -70,6 +97,8 @@
   .facebook-title {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: start;
   }
 
   .card-facebook {
@@ -91,8 +120,8 @@
     }
 
     .card-facebook-description {
-        color: aliceblue;
-        font-weight: bold;
+      color: aliceblue;
+      font-weight: bold;
     }
   }
 }
