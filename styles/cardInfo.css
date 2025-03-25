@@ -1,0 +1,98 @@
+/* card info */
+.card-container-info {
+  background-color: aliceblue;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .title-main {
+    text-align: center;
+    font-size: x-large;
+
+  }
+
+  figure {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .text-info {
+    /* background-color: aqua; */
+    padding-top: 1rem;
+  }
+
+  .items {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ul {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .more-info {
+    display: flex;
+    text-align: center;
+  }
+
+  .title-ubication {
+    padding-top: 1.5rem;
+  }
+
+  iframe {
+    padding-top: 1rem;
+    padding: 0;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .bus-text {
+    padding-top: 1rem;
+  }
+
+  .facebook-title {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .card-facebook {
+    background-color: var(--bg-primary-color);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+
+    svg {
+      color: #55abda;
+    }
+
+    .card-facebook-title {
+      color: #55abda;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .card-facebook-description {
+        color: aliceblue;
+        font-weight: bold;
+    }
+  }
+}
