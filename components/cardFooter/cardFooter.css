@@ -1,0 +1,25 @@
+.card-footer-container {
+  background-color: aliceblue;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    color: #55abda;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+  }
+
+  address {
+    padding-top: 2rem;
+    color: #979797  ;
+  }
+}

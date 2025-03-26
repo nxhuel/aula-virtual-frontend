@@ -3,35 +3,87 @@
   <div class="header-container">
     <div class="header-items">
       <p>
-        <a href="#" target="_blank" rel="noopener noreferrer">Gestión Guarani</a>
-        | 
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          >Gestión Guarani</a
+        >
+        |
         <a href="#" target="_blank" rel="noopener noreferrer">Administración</a>
       </p>
     </div>
     <div class="header-main">
-      <img src="/assets/images/logo-ifts.png" alt="Logo" />
+      <div class="header-img">
+        <img src="/assets/images/logo-ifts.png" alt="Logo" />
+      </div>
 
-      <p><span class="header-main-title">INSTITUTO DE FORMACIÓN TÉCNICA SUPERIOR N°21</span></p>
-      <p>Ministerio de Educación</p>
-      <p>Gobierno de la Ciudad de Buenos Aires</p>
+      <div class="header-text">
+        <p>
+          <span class="header-main-title"
+            >INSTITUTO DE FORMACIÓN TÉCNICA SUPERIOR N°21
+          </span>
+        </p>
+        <p>Ministerio de Educación</p>
+        <p>Gobierno de la Ciudad de Buenos Aires</p>
+      </div>
     </div>
-    <div class="dropdown">
-      <select onchange="location = this.value;">
-        <option value="#">MENU</option>
-        <option value="index.html">- Home</option>
-        <option value="carreras.html">- Carreras</option>
-        <option value="adm-publica.html">-- Técnico Sup. en Adm. Pública</option>
-        <option value="analisis-sistemas.html">-- Técnico Superior en Análisis de Sistemas</option>
-        <option value="info-general.html">- Información General</option>
-        <option value="institucion.html">- Institución</option>
-        <option value="nuestra-institucion.html">-- Nuestra Institución</option>
-        <option value="autoridades.html">-- Autoridades</option>
-        <option value="docentes.html">- Docentes</option>
-        <option value="aula-virtual.html">- Aula Virtual</option>
-        <option value="guarani.html">- Guarani Alumnos</option>
-        <option value="contacto.html">- Contacto</option>
-        <option value="alumnos.html">- Alumnos</option>
-      </select> 
-    </div>
+    
+    <nav>
+      <ul class="menu-desktop">
+        <li><a href="index.html" class="home-link">HOME</a></li>
+        <li class="dropdown">
+          <a href="#">▼ CARRERAS</a>
+          <ul class="submenu">
+            <li>
+              <a href="carreras.html"
+                >Técnico Sup. en Adm. Pública con orientación Municipal</a
+              >
+            </li>
+            <li>
+              <a href="adm-publica.html"
+                >Técnico Superior en Análisis de Sistemas</a
+              >
+            </li>
+            <li>
+              <a href="analisis-sistemas.html">Información General</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">▼ INSTITUCIÓN </a>
+          <ul class="submenu">
+            <li><a href="institucion.html">Nuestra Institución</a></li>
+            <li><a href="nuestra-institucion.html">Autoridades</a></li>
+            <li><a href="autoridades.html">Docentes</a></li>
+          </ul>
+        </li>
+        <li><a href="aula-virtual.html">AULA VIRTUAL</a></li>
+        <li><a href="guarani.html">GUARANI ALUMNOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="alumnos.html">ALUMNOS</a></li>
+      </ul>
+
+      <!-- Menú Responsive -->
+      <div class="menu-responsive">
+        <select onchange="location = this.value;">
+          <option value="#">MENU</option>
+          <option value="index.html">- Home</option>
+          <option value="carreras.html">- Carreras</option>
+          <option value="adm-publica.html">
+            -- Técnico Sup. en Adm. Pública
+          </option>
+          <option value="analisis-sistemas.html">
+            -- Técnico Sup. en Análisis de Sistemas
+          </option>
+          <option value="institucion.html">- Institución</option>
+          <option value="nuestra-institucion.html">
+            -- Nuestra Institución
+          </option>
+          <option value="autoridades.html">-- Autoridades</option>
+          <option value="aula-virtual.html">- Aula Virtual</option>
+          <option value="guarani.html">- Guarani Alumnos</option>
+          <option value="contacto.html">- Contacto</option>
+          <option value="alumnos.html">- Alumnos</option>
+        </select>
+      </div>
+    </nav>
   </div>
 </header>

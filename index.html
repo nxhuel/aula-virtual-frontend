@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Agregar meta - SEO -->
     <link rel="icon" href="/assets/images/logo-ifts.png" type="image/x-icon" />
     <!-- exporting styles -->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./components/header/header.css" />
     <link rel="stylesheet" href="./components/footer/footer.css" />
+    <link rel="stylesheet" href="./components/cardFooter/cardFooter.css" />
     <link rel="stylesheet" href="./styles/cardLinks.css" />
     <link rel="stylesheet" href="./styles/cardInfo.css" />
     <title>IFTS21</title>
@@ -61,7 +63,11 @@
         <p class="title-main">INSTITUTO DE FORMACIÓN TÉCNICA N° 21</p>
         <hr />
         <figure>
-          <img class="img-institucion" src="./assets/images/sobre-nuestra-institucion.png" alt="institucion ifts 21" />
+          <img
+            class="img-institucion"
+            src="./assets/images/sobre-nuestra-institucion.png"
+            alt="institucion ifts 21"
+          />
         </figure>
         <hr />
         <div class="text-info">
@@ -154,11 +160,14 @@
       </div>
 
       <!-- card footer -->
-      <!-- asjksfjka -->
+      <div id="cardFooter"></div>
+      <script>
+        fetch("components/cardFooter/cardFooter.html")
+          .then((response) => response.text())
+          .then((data) => (document.getElementById("cardFooter").innerHTML = data));
+      </script>
 
       <!-- footer -->
-
-      <!-- header -->
       <div id="footer"></div>
       <script>
         fetch("components/footer/footer.html")
