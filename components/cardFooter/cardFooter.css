@@ -13,13 +13,31 @@
   .description {
     color: #55abda;
     a {
-        color: inherit;
-        text-decoration: none;
+      color: inherit;
+      text-decoration: none;
     }
   }
 
   address {
     padding-top: 2rem;
-    color: #979797  ;
+    color: #979797;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .card-footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  address {
+    width: 100%;
+    padding-top: 1rem !important;
+    font-size: smaller;
   }
 }
