@@ -136,8 +136,14 @@
     gap: 20px;
     padding: 20px;
 
+    figure {
+      display: flex;
+      justify-content: center;
+    }
+
     img {
-      height: 250px;
+      width: 100%;
+      height: auto;
     }
   }
 
