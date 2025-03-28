@@ -83,6 +83,8 @@
     background-color: red;
   } */
 
+
+
   .header-items {
     text-align: end;
   }
@@ -110,6 +112,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
   }
 
   .menu-responsive {
@@ -119,10 +123,11 @@
   .menu-desktop {
     display: flex;
     list-style: none;
-    padding: 10px;
-    margin: 0 10px;
+    padding: 5px;
+    margin: 1rem 10px;
     background: #f5f5f5;
     border-radius: 10px;
+    font-size: small;
 
     .home-link {
         color: #55abda;
