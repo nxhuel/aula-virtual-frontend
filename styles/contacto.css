@@ -1,0 +1,69 @@
+.dk-form-top {
+  width: auto;
+  height: 70vh;
+  padding-top: 1rem;
+}
+
+.form-container {
+  margin: 4rem auto;
+
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 80px;
+}
+
+input,
+textarea {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background-color: #00152a;
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+.form-actions {
+  text-align: end;
+}
+
+button {
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+@media (min-width: 1024px) {
+  .dk-form-top {
+    width: 70vh;
+    height: 70vh;
+    padding-top: 1rem;
+  }
+
+  .form-container {
+    margin: 4rem auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+  }
+}

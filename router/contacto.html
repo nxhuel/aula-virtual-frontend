@@ -6,16 +6,17 @@
     <!-- Agregar meta - SEO -->
 
     <!-- exporting styles -->
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./components/header/header.css" />
-    <link rel="stylesheet" href="./components/footer/footer.css" />
-    <link rel="stylesheet" href="./components/cardFooter/cardFooter.css" />
-    <link rel="stylesheet" href="./styles/cardLinks.css" />
-    <link rel="stylesheet" href="./styles/cardInfo.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/components/cardFooter/cardFooter.css" />
+    <link rel="stylesheet" href="/styles/cardLinks.css" />
+    <link rel="stylesheet" href="/styles/cardInfo.css" />
+    <link rel="stylesheet" href="/styles/contacto.css" />
 
     <link
       rel="shortcut icon"
-      href="./assets/images/logo-ifts.png"
+      href="/assets/images/logo-ifts.png"
       type="image/x-icon"
     />
     <title>IFTS21</title>
@@ -25,7 +26,7 @@
       <!-- header -->
       <div id="header"></div>
       <script>
-        fetch("components/header/header.html")
+        fetch("/components/header/header.html")
           .then((response) => response.text())
           .then((data) => (document.getElementById("header").innerHTML = data));
       </script>
@@ -68,52 +69,50 @@
 
       <div class="card-container-info">
         <div class="dk-top">
-          <p class="title-main">INSTITUTO DE FORMACIÓN TÉCNICA N° 21</p>
-          <hr />
-          <figure>
-            <img
-              class="img-institucion"
-              src="./assets/images/institucion-front.png"
-              alt="institucion ifts 21"
-            />
-          </figure>
-          <hr />
-          <div class="text-info">
-            <span class="description"
-              >El Instituto de Formación Técnica N° 21 ofrece carreras
-              terciarias gratuitas con títulos oficiales a nivel nacional en
-              articulación con universidades.
-            </span>
-            <br />
-            <span class="description-space">Las carreras ofrecidas son:</span>
-            <span class="items">
-              <ul>
-                <li>
-                  <a href="#"
-                    >TÉCNICO SUPERIOR EN ADMINISTRACIÓN PÚBLICA CON ORIENTACIÓN
-                    MUNICIPAL</a
-                  >
-                </li>
-                <li>
-                  <a href="#">TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</a>
-                </li>
-              </ul>
-            </span>
-            <div class="more-info">
-              <div class="calendar">
-                <p>CALENDARIO LECTIVO</p>
-                <img
-                  src="/assets/images/calendar.png"
-                  alt="calendario ifts 21"
-                />
-              </div>
-              <div class="info-general">
-                <p>INFORMACIÓN GENERAL</p>
-                <img
-                  src="/assets/images/more-info.png"
-                  alt="más información ifts 21"
-                />
-              </div>
+          <div class="dk-form-top">
+            <p class="title-main">FORMULARIO DE CONTACTO</p>
+            <hr />
+            <div class="form-container">
+              <form action="#" method="post">
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Nombre y Apellido"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="asunto">Asunto:</label>
+                  <input
+                    type="text"
+                    id="asunto"
+                    name="asunto"
+                    placeholder="Asunto"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ejemplo@correo.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Mensaje"
+                  ></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -161,7 +160,7 @@
       <!-- card footer -->
       <div id="cardFooter"></div>
       <script>
-        fetch("components/cardFooter/cardFooter.html")
+        fetch("/components/cardFooter/cardFooter.html")
           .then((response) => response.text())
           .then(
             (data) => (document.getElementById("cardFooter").innerHTML = data)
@@ -171,13 +170,10 @@
       <!-- footer -->
       <div id="footer"></div>
       <script>
-        fetch("components/footer/footer.html")
+        fetch("/components/footer/footer.html")
           .then((response) => response.text())
           .then((data) => (document.getElementById("footer").innerHTML = data));
       </script>
     </div>
   </body>
-
-  <script src="/js/main.js"></script>
-  
 </html>
