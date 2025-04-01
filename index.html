@@ -33,32 +33,62 @@
       <!-- content -->
       <!-- card links -->
       <div class="card-container-links">
-        <img
-          id="displayImage"
-          src="/assets/images/sobre-nuestra-institucion.png"
-          alt="ifts-21"
-        />
+        <div class="image-wrapper">
+          <img
+            id="displayImage"
+            src="/assets/images/sobre-nuestra-institucion.png"
+            alt="ifts-21"
+          />
+          <div class="card-imagen" id="imageCard">
+            <p id="cardTitle">Nuestra Institución</p>
+            <p id="cardText">
+              El IFTS Nº21 fue creado por un convenio original entre el
+              Ministerio de Cultura y Educación de la Nación, a través de la
+              DINEA y SUTECBA
+            </p>
+            <a id="cardLink" href="/router/institucion/institucion.html">Seguir Leyendo »</a>
+          </div>
+        </div>
+
         <ul>
           <li
-            onclick="changeImage('/assets/images/sobre-nuestra-institucion.png')"
+            onclick="changeImage(
+            '/assets/images/sobre-nuestra-institucion.png', 
+            'Nuestra Institución',               
+            'El IFTS Nº21 fue creado por un convenio original entre el Ministerio de Cultura y Educación de la Nación, a través de la DINEA y SUTECBA',
+            '/router/institucion/institucion.html')"
           >
             SOBRE NUESTRA INSTITUCIÓN
           </li>
           <li
-            onclick="changeImage('/assets/images/tecnico-en-administracion.png')"
+            onclick="changeImage(
+            '/assets/images/tecnico-en-administracion.png',
+            'Técnico Superior en Administración Pública',
+            'Estudie los aspectos fundamentales de la Administración Pública en general y de la Administración Municipal.',
+            '/router/carreras/tecnicoAdministracion.html')"
           >
             TÉCNICO EN ADMINISTRACIÓN
           </li>
           <li
-            onclick="changeImage('/assets/images/tecnico-en-analisis-de-sistemas.png')"
+            onclick="changeImage('/assets/images/tecnico-en-analisis-de-sistemas.png',
+            'Técnico Superior en Análisis de Sistemas',
+            'Analisis y construcción de las herramientas intelectuales y prácticas necesarias para la operación, programación y el análisis de sistemas informáticos.',
+            '/router/carreras/tecnicoSistemas.html')"
           >
             TÉCNICO EN ANALISIS DE SISTEMAS
           </li>
-          <li onclick="changeImage('/assets/images/aula-virtual.png')">
+          <li
+            onclick="changeImage('/assets/images/aula-virtual.png',
+          'Aula Virtual',
+          'A traves del aula virtual los profesores comparten apuntes y ejercicios para facilitar el aprendizaje.',
+          `https://aulasvirtuales.bue.edu.ar/`)"
+          >
             AULA VIRTUAL
           </li>
-
-          <li onclick="changeImage('/assets/images/consultas.png')">
+          <li onclick="changeImage('/assets/images/consultas.png',
+          'Envianos tus consultas...',
+          'Envianos tus consultas sobre las carreras y materias.',
+          '/router/contacto.html')">
             CONSULTAS
           </li>
         </ul>
@@ -89,30 +119,46 @@
             <span class="items">
               <ul>
                 <li>
-                  <a href="#"
+                  <a
+                    href="/router/carreras/tecnicoAdministracion.html"
+                    target="_blank"
                     >TÉCNICO SUPERIOR EN ADMINISTRACIÓN PÚBLICA CON ORIENTACIÓN
                     MUNICIPAL</a
                   >
                 </li>
                 <li>
-                  <a href="#">TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</a>
+                  <a
+                    href="/router/carreras/tecnicoSistemas.html"
+                    target="_blank"
+                    >TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</a
+                  >
                 </li>
               </ul>
             </span>
             <div class="more-info">
               <div class="calendar">
                 <p>CALENDARIO LECTIVO</p>
-                <img
-                  src="/assets/images/calendar.png"
-                  alt="calendario ifts 21"
-                />
+                <a
+                  href="http://www.ifts21.edu.ar/pdf/calendario.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/assets/images/calendar.png"
+                    alt="calendario ifts 21"
+                /></a>
               </div>
               <div class="info-general">
                 <p>INFORMACIÓN GENERAL</p>
-                <img
-                  src="/assets/images/more-info.png"
-                  alt="más información ifts 21"
-                />
+                <a
+                  href="/router/carreras/infoGeneral.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/assets/images/more-info.png"
+                    alt="más información ifts 21"
+                /></a>
               </div>
             </div>
           </div>
@@ -121,7 +167,9 @@
         <div class="dk-right">
           <p class="title-ubication">Ubicación</p>
           <hr />
-          <iframe src="https://www.google.com/maps/embed?..."></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d52555.10939446868!2d-58.42149999999996!3d-34.5866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e3!4m4!1s0x95bccb69beadc033%3A0xd33ef4a61199a6ea!3m2!1d-34.618674899999995!2d-58.426389799999995!4m5!1s0x95bccb69beadc033%3A0xd33ef4a61199a6ea!2sInstituto%20de%20Formaci%C3%B3n%20T%C3%A9cnica%20Superior%20N%C2%B0%2021%2C%20Pasaje%20Carlos%20Spegazzini%2C%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires!3m2!1d-34.618674899999995!2d-58.426389799999995!5e0!3m2!1ses-419!2sar!4v1743448893901!5m2!1ses-419!2sar"
+          ></iframe>
           <div class="bus-text">
             Líneas: 2 - 5 - 15 - 26 - 65 - 84 - 85 - 86 - 103 - 112 - 132 <br />
             Subte: Línea A
@@ -133,19 +181,30 @@
           <hr />
           <div class="card-facebook">
             <div class="card-facebool-left">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
+              <a
+                href="https://www.facebook.com/groups/447781352005998"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-                />
-              </svg>
-              <p class="card-facebook-title">Seguinos en Facebook</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/447781352005998"
+                target="_blank"
+              >
+                <p class="card-facebook-title">Seguinos en Facebook</p>
+              </a>
             </div>
 
             <div class="divider"></div>
@@ -179,5 +238,4 @@
   </body>
 
   <script src="/js/main.js"></script>
-  
 </html>

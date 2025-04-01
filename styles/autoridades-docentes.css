@@ -1,0 +1,47 @@
+.dk-info-top {
+  padding: 1rem;
+
+  figure {
+    padding: 1rem;
+
+    img {
+      object-fit: cover;
+      border: 1px solid #c6c6c6;
+      padding: 0.2rem;
+    }
+  }
+
+  .info-main {
+    text-align: center;
+    padding: 1rem 0rem;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 0.5rem 0rem;
+  }
+
+  h2,
+  h3 {
+    font-size: x-large;
+    font-weight: normal;
+    text-decoration: underline;
+
+  }
+
+  h2 {
+    padding: 1rem 0rem;
+    
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: medium;
+    margin: 5px 0;
+  }
+}

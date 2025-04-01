@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Agregar meta - SEO -->
+
+    <!-- exporting styles -->
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <link rel="stylesheet" href="/components/cardFooter/cardFooter.css" />
+    <link rel="stylesheet" href="/styles/cardLinks.css" />
+    <link rel="stylesheet" href="/styles/cardInfo.css" />
+    <!-- estilos personalizable para cada ruta -->
+    <link rel="stylesheet" href="/styles/institucion.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-ifts.png"
+      type="image/x-icon"
+    />
+    <title>IFTS21</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- header -->
+      <div id="header"></div>
+      <script>
+        fetch("/components/header/header.html")
+          .then((response) => response.text())
+          .then((data) => (document.getElementById("header").innerHTML = data));
+      </script>
+
+      <!-- content -->
+
+      <!-- card info -->
+
+      <div class="card-container-info">
+        <div class="dk-top">
+          <!-- contenido personalizable para cada ruta -->
+          <div class="dk-info-top">
+            <p class="title-main">INSTITUCIÓN</p>
+            <hr />
+            <figure>
+              <img
+                src="/assets/images/institucion-front.png"
+                alt="técnico superior en administración pública con orientación municipal"
+              />
+            </figure>
+            <hr />
+            <div class="info-main">
+              <ul class="ul-asterisco">
+                <li>
+                  El IFTS Nº 21 fue creado por un convenio original entre el
+                  Ministerio de Cultura y Educación de la Nación - a través de
+                  la Dirección Nacional del Adulto (DINEA) - y el Sindicato
+                  Único de Trabajadores del Estado de la Ciudad de Buenos Aires
+                  (SUTECBA), y posteriormente por una addenda a dicho convenio
+                  se incorporó la Obra Social de la Ciudad de Buenos Aires
+                  (OSBA); en el marco de una gestión compartida que está
+                  formalizada a través de la Resolución Ministerial Nº 425/83.
+                </li>
+                <li>
+                  Estos acuerdos se originaron en una propuesta gremial cuyo fin
+                  era ofrecer al personal del Gobierno de la Ciudad de Buenos
+                  Aires (GCBA) una carrera terciaria, como es la de “Técnico
+                  Superior en Administración Pública con Orientación Municipal”,
+                  que permitiera no sólo elevar el nivel del trabajador estatal
+                  ofreciéndole un título técnico sino también eficientizando el
+                  servicio público de la Administración Pública.
+                </li>
+                <li>
+                  En los países del primer mundo en donde éste concepto se
+                  aplica han obtenido altos beneficios de la inversión que la
+                  educación presupone, en tanto ésta es posibilitadora de
+                  beneficios concretos en la calidad del desempeño laboral.
+                  Mejora la eficiencia en el desempeño de tareas que tienden a
+                  rutinizarse y logra metas de máxima eficacia, que resultan
+                  elementos indispensables contemplados en los postulados de las
+                  políticas gubernamentales.
+                </li>
+                <li>
+                  El IFTS Nº 21 actualmente depende de la Dirección General de
+                  Educación Superior del Ministerio de Educación del GCBA,
+                  comenzó sus actividades académicas el 1º de agosto de 1992. La
+                  carrera se dicta en la sede gremial de Carlos Spegazzini 450,
+                  y desde el año 2005 se ha incorporado una nueva carrera: la de
+                  “Técnico Superior en Informática de la Empresa”, currícula que
+                  fue suplantada por la de “Técnico Superior en Análisis de
+                  Sistemas”, con una visión integradora y generalizante.
+                </li>
+                <li>
+                  El alumnado está compuesto en su mayoría por personal
+                  perteneciente a todos los Ministerios del GCBA, desempañándose
+                  en distintos niveles dentro de la propia Administración lo que
+                  ha permitido conformar grupos humanos sumamente heterogéneos
+                  que reflejan la complejidad y variedad de las características
+                  de la Administración Pública en este particular ámbito de
+                  gobierno.
+                </li>
+                <li>
+                  Para poder dar respuesta desde lo educativo a una población
+                  tan compleja fue necesario seleccionar un plantel de docentes
+                  portadores no sólo de acreditaciones universitarias de alta
+                  calificación, sino también de destacada actuación en la
+                  Administración Pública local. Este perfil docente es el que ha
+                  permitido dotar de profundidad, propiedad y dinamismo a los
+                  contenidos que integran las distintas materias de la
+                  currícula, en un proceso constante de retroalimentación y de
+                  intercambio con el alumnado, característica ésta que
+                  posibilita su permanente evolución, pertinencia y
+                  actualización.
+                </li>
+                <li>
+                  En virtud de la trayectoria y prestigio alcanzado por el
+                  Instituto, el título de “Técnico Superior en Administración
+                  Pública con Orientación Municipal” fue incorporado al
+                  Nomenclador de Funciones del GCBA, por Resolución Nº 2.300/98.
+                </li>
+                <li>
+                  Por convenio firmado con distintas entidades, el título es
+                  reconocido como parte de la “Licenciatura en Administración”
+                  de distintas Universidades Nacionales, en las que previa
+                  aprobación de los denominados cursos de complementación
+                  curricular es posible acceder al título de grado. Estos
+                  convenios están vigentes en la actualidad y un centenar de
+                  egresados de nuestra institución han alcanzado la licenciatura
+                  universitaria.
+                </li>
+                <li>
+                  La profesionalización a nivel universitario de los empleados
+                  del GCBA que egresan como Técnicos Superiores de nivel
+                  terciario, se funda en el concepto de capacitación permanente
+                  que cuenta con reconocimiento mundial.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="dk-right">
+          <p class="title-ubication">Ubicación</p>
+          <hr />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d52555.10939446868!2d-58.42149999999996!3d-34.5866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e3!4m4!1s0x95bccb69beadc033%3A0xd33ef4a61199a6ea!3m2!1d-34.618674899999995!2d-58.426389799999995!4m5!1s0x95bccb69beadc033%3A0xd33ef4a61199a6ea!2sInstituto%20de%20Formaci%C3%B3n%20T%C3%A9cnica%20Superior%20N%C2%B0%2021%2C%20Pasaje%20Carlos%20Spegazzini%2C%20Ciudad%20Aut%C3%B3noma%20de%20Buenos%20Aires!3m2!1d-34.618674899999995!2d-58.426389799999995!5e0!3m2!1ses-419!2sar!4v1743448893901!5m2!1ses-419!2sar"
+          ></iframe>
+          <div class="bus-text">
+            Líneas: 2 - 5 - 15 - 26 - 65 - 84 - 85 - 86 - 103 - 112 - 132 <br />
+            Subte: Línea A
+          </div>
+        </div>
+
+        <div class="dk-bottom">
+          <p class="facebook-title">Facebook</p>
+          <hr />
+          <div class="card-facebook">
+            <div class="card-facebool-left">
+              <a
+                href="https://www.facebook.com/groups/447781352005998"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/447781352005998"
+                target="_blank"
+              >
+                <p class="card-facebook-title">Seguinos en Facebook</p>
+              </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="card-facebook-description">
+              Mantente informado sobre todas las novedades y fechas del IFTS 21
+              en Facebook
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card footer -->
+      <div id="cardFooter"></div>
+      <script>
+        fetch("/components/cardFooter/cardFooter.html")
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("cardFooter").innerHTML = data)
+          );
+      </script>
+
+      <!-- footer -->
+      <div id="footer"></div>
+      <script>
+        fetch("/components/footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => (document.getElementById("footer").innerHTML = data));
+      </script>
+    </div>
+  </body>
+</html>

@@ -120,6 +120,13 @@
       color: #55abda;
       padding-top: 0.5rem;
       padding-bottom: 1rem;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      border: none;
+      outline: none;
     }
 
     .card-facebook-description {

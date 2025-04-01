@@ -1,5 +1,6 @@
 /* card links */
 .card-container-links {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -10,6 +11,18 @@
   border-radius: 1rem;
   padding: 0.5rem;
 
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #displayImage {
+    width: 100%;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+  }
   img {
     width: 100%;
     height: auto;
@@ -18,10 +31,46 @@
     border-top-right-radius: 1rem;
   }
 
+  .card-imagen {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    background: rgba(255, 255, 255, 0.318);
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    text-align: start;
+    color: black;
+    font-size: smaller;
+  }
+
+  .card-imagen p {
+    padding: 0.5rem 0;
+  }
+
+  .card-imagen a {
+    padding: 1rem 1rem 0 0;
+    display: block;
+    color: #55abda;
+    text-decoration: none;
+    text-align: end;
+  }
+
+  .card-imagen:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
   ul {
     list-style: none;
     padding: 0;
     width: 100%;
+  }
+
+  ul li:first-child {
+    background-color: #06213f;
+    color: aliceblue;
   }
 
   li {
@@ -49,6 +98,50 @@
 @media (min-width: 1024px) {
   .card-container-links {
     padding: 1rem;
+    position: relative;
+    /* width: fit-content; */
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #displayImage {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .card-imagen {
+      position: absolute;
+      top: 12%;
+      right: 5%;
+      background: rgba(255, 255, 255, 0.318);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 40%;
+      transition: opacity 0.3s ease-in-out;
+      text-align: start;
+      color: #666666;
+    }
+
+    .card-imagen p {
+      padding: 0.5rem 0;
+    }
+
+    .card-imagen a {
+      padding: 1rem 1rem 0 0;
+      display: block;
+      color: #55abda;
+      text-decoration: none;
+      text-align: end;
+    }
+
+    .card-imagen:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
 
     ul {
       display: flex;

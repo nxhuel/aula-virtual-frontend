@@ -11,7 +11,9 @@
   }
 
   .description {
+    padding-top: 0.5rem;
     color: #55abda;
+    font-size: smaller;
     a {
       color: inherit;
       text-decoration: none;
