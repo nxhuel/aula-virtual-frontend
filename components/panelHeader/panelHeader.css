@@ -1,0 +1,183 @@
+/* mobiles - tablets - notebooks */
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    list-style: none;
+    font-family: "Times New Roman";
+  }
+  
+  :root {
+    --bg-primary-color: #06213f;
+    --bg-header: #4180c5;
+    --txt-primary-color: #f9f9f9;
+    --txt-secondary-color: #979797;
+  }
+  
+  body {
+    background-color: var(--bg-primary-color);
+  }
+  
+  .header-main {
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 0.5rem;
+  
+    .header-img {
+      display: flex;
+      align-items: center;
+    }
+  
+    img {
+      width: 50px;
+      height: auto;
+    }
+  
+    .header-main-title {
+      font-size: small;
+      color: var(--txt-primary-color);
+    }
+  
+    p {
+      font-size: small;
+      color: var(--txt-primary-color);
+      margin: 0;
+      line-height: 1.2;
+    }
+  }
+  
+  nav {
+    padding: 0.5rem;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    position: relative;
+    padding: 10px 0;
+    font-size: 8px;
+    text-align: center;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: var(--txt-primary-color);
+    padding: 2px;
+  }
+  
+  .menu a:hover {
+    color: #55abda;
+  }
+  
+  #user-name {
+    text-transform: uppercase;
+  }
+  /* Estilos para pantallas de tablet en adelante */
+  
+  @media (min-width: 1024px) {
+    .header-main {
+      padding: 1rem;
+  
+      .header-text {
+        margin: 1rem 10rem 0rem 1rem;
+      }
+  
+      .header-img {
+        margin: 1rem 1rem 1rem 10rem;
+      }
+  
+      img {
+        width: 100px;
+        height: auto;
+      }
+  
+      .header-main-title {
+        font-size: xx-large;
+      }
+  
+      p {
+        font-size: xx-large;
+        margin: 0;
+      }
+    }
+  
+    nav {
+      margin: 1rem 15rem;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+    }
+  
+    .menu li {
+      position: relative;
+      padding: 0;
+      font-size: medium;
+      text-align: center;
+    }
+  
+    .menu a {
+      text-decoration: none;
+      color: var(--txt-primary-color);
+      padding: 2px;
+    }
+  }
+  
+  /* Estilos para pantallas de pc en adelante */
+  @media (min-width: 1440px) {
+    .header-main {
+      padding: 1rem;
+  
+      .header-text {
+        margin: 1rem 20rem 0rem 1rem;
+      }
+  
+      .header-img {
+        margin: 1rem 1rem 1rem 20rem;
+      }
+  
+      img {
+        width: 100px;
+        height: auto;
+      }
+  
+      .header-main-title {
+        font-size: xx-large;
+      }
+  
+      p {
+        font-size: xx-large;
+        margin: 0;
+      }
+    }
+  
+    nav {
+      margin: 1rem 20rem 0rem 20rem;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+    }
+  
+    .menu li {
+      position: relative;
+      padding: 0;
+      font-size: medium;
+      text-align: center;
+    }
+  
+    .menu a {
+      text-decoration: none;
+      color: var(--txt-primary-color);
+      padding: 2px;
+    }
+  }
+  

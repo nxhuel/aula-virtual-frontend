@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Agregar meta - SEO -->
+
+    <!-- exporting styles -->
+    <link rel="stylesheet" href="/components/panelHeader/panelHeader.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-ifts.png"
+      type="image/x-icon"
+    />
+    <title>IFTS21</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- panelHeader -->
+      <div id="panelHeader"></div>
+      <script>
+        fetch("/components/panelHeader/panelHeader.html")
+          .then((response) => response.text())
+          .then((data) => (document.getElementById("panelHeader").innerHTML = data));
+      </script>
+    </div>
+  </body>
+
+  <script src="/js/panel.js"></script>
+</html>

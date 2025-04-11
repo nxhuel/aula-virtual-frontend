@@ -69,10 +69,25 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button:hover {
   background-color: #ccc;
+}
+
+#resultado {
+  color: red;
+}
+
+@media (min-width: 500px) {
+  .form-container {
+    margin: 4rem auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+  }
 }
 
 @media (min-width: 1024px) {
