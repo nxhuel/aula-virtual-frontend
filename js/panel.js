@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/v1/api/auth/user-logged", {
+        const response = await fetch("https://ifts21.up.railway.app/v1/api/auth/user-logged", {
             method: "GET",
             headers: {
                 "Authorization": `Basic ${credentials}`
