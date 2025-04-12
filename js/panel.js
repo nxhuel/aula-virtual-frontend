@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (!credentials) {
         console.warn("No hay credenciales. Redirigiendo al login...");
-        window.location.href = "./router/alumnos.html";
+        // window.location.href = "./router/alumnos.html";
+        window.location.replace("/router/alumnos.html");
         return;
     }
 
