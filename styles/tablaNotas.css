@@ -1,0 +1,25 @@
+.notesTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0b1d3c;
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #0008;
+}
+
+.notesTable th,
+.notesTable td {
+  border: 1px solid #39587e;
+  padding: 10px;
+  text-align: center;
+}
+
+.notesTable tbody tr:hover {
+  background-color: #1a2f4d;
+}
+
+.notesTable td {
+  font-size: 0.95rem;
+}

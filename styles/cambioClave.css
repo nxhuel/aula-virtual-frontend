@@ -1,0 +1,63 @@
+.banner {
+  background-color: #091f38;
+  border: 2px solid #999;
+  border-radius: 8px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.banner-header {
+  background-color: #4989c7;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.banner-article {
+  padding: 24px;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+label {
+    width: 100%;
+    text-align: start;
+  font-weight: lighter;
+  margin-bottom: -8px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to right, #3a80d3, #5a94d1);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #336cb3, #4b82c0);
+}
+
+#resultado {
+  margin-top: 10px;
+  font-size: 14px;
+}

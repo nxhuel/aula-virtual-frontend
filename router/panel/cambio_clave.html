@@ -9,6 +9,7 @@
     <!-- exporting styles -->
     <link rel="stylesheet" href="/components/panelHeader/panelHeader.css" />
     <link rel="stylesheet" href="/styles/panel.css" />
+    <link rel="stylesheet" href="/styles/cambioClave.css">
 
     <link
       rel="shortcut icon"
@@ -18,14 +19,6 @@
     <title>IFTS21</title>
   </head>
   <body>
-    <script>
-      const roles = JSON.parse(sessionStorage.getItem("roles"));
-
-      if (!roles.includes("STUDENT")) {
-        alert("Acceso denegado");
-        window.location.href = "/router/alumnos.html";
-      }
-    </script>
     <div id="app">
       <!-- panelHeader -->
       <div id="panelHeader"></div>
@@ -39,10 +32,35 @@
     </div>
     <main>
       <div class="banner">
-        <div class="banner-header"></div>
+        <div class="banner-header">CAMBIO DE CLAVE</div>
         <article class="banner-article">
-          BIENVENIDO AL SISTEMA ALUMNOS <br />
-          DEL IFTS21
+          <section class="card">
+            <form id="passwordForm">
+                <label for="oldPassword">Anterior:</label>
+              <input
+                type="password"
+                id="oldPassword"
+                placeholder="**********"
+                required
+              />
+              <label for="newPassword">Nueva:</label>
+              <input
+                type="password"
+                id="newPassword"
+                placeholder="**********"
+                required
+              />
+              <label for="repeatPassword">Repetir:</label>
+              <input
+                type="password"
+                id="repeatPassword"
+                placeholder="**********"
+                required
+              />
+              <button type="submit">Cambiar</button>
+              <div id="resultado"></div>
+            </form>
+          </section>
         </article>
       </div>
     </main>
@@ -50,4 +68,5 @@
 
   <script src="/js/panel.js"></script>
   <script src="/js/logoutAlumno.js"></script>
+  <script src="/js/cambioClave.js"></script>
 </html>

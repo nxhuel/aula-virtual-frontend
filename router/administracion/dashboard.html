@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Agregar meta - SEO -->
+
+    <!-- exporting styles -->
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-ifts.png"
+      type="image/x-icon"
+    />
+    <title>IFTS21</title>
+  </head>
+  <body>
+    <script>
+      const roles = JSON.parse(sessionStorage.getItem("roles"));
+
+      if (!roles.includes("ADMIN") && !roles.includes("PROFESOR")) {
+        alert("Acceso denegado");
+        window.location.href = "/router/administracion.html";
+      }
+    </script>
+
+    <aside class="sidebar">
+      <span class="bienvenida">Panel de Administración</span>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </aside>
+
+    <main class="dashboard">
+      <!-- Agregar Materia -->
+      <section class="card">
+        <h1>AGREGAR MATERIA</h1>
+        <form id="subjectForm">
+          <label for="name">Nombre de la Materia</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ej: Programación 1"
+            required
+          />
+          <select id="year" required>
+            <option value="">Año</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select id="period" required>
+            <option value="">Periodo</option>
+            <option value="1">1° Cuatrimestre</option>
+            <option value="2">2° Cuatrimestre</option>
+            <option value="A">Anual</option>
+          </select>
+          <label for="startDateCourse">Inicio de Cursada</label>
+          <input type="date" id="startDateCourse" required />
+          <label for="finalDateCourse">Fin de Cursada</label>
+          <input type="date" id="finalDateCourse" required />
+          <label for="dniProfessor">DNI del Profesor/a</label>
+          <input
+            type="number"
+            id="dniProfessor"
+            placeholder="Ej: 42136223"
+            required
+          />
+          <button type="submit">Agregar Materia</button>
+          <div id="resultado"></div>
+        </form>
+      </section>
+
+      <!-- Cargar Nota -->
+      <section class="card">
+        <h1>CARGAR NOTA</h1>
+        <form id="notaForm">
+          <label for="subjectInscribedId">ID Materia Inscripta de Alumno</label>
+          <input
+            type="number"
+            id="subjectInscribedId"
+            placeholder="Ej: 4"
+            required
+          />
+          <input
+            type="number"
+            id="finalCourseGrade"
+            placeholder="Nota cursada (0 a 10)"
+            required
+            min="0"
+            max="10"
+          />
+          <input
+            type="number"
+            id="finalExamGrade"
+            placeholder="Nota final (0 a 10)"
+            required
+            min="0"
+            max="10"
+          />
+          <button type="submit">Cargar Nota</button>
+          <div id="resultadoNota"></div>
+        </form>
+      </section>
+
+      <!-- Materia Final -->
+      <section class="card">
+        <h1>CARGAR EXAMEN FINAL</h1>
+        <form id="finalExamForm">
+          <label for="nameFinal">Nombre de la Materia Existente</label>
+          <input
+            type="text"
+            id="nameFinal"
+            placeholder="Ej: Programación 1"
+            required
+          />
+          <label for="finalDate">Fecha de Final</label>
+          <input type="date" id="finalDate" required />
+          <label for="dniProfessorFinal">DNI del Profesor/a</label>
+          <input
+            type="number"
+            id="dniProfessorFinal"
+            placeholder="Ej: 42136223"
+            required
+          />
+          <label for="registrationDate">Fecha de Inscripción</label>
+          <input type="date" id="registrationDate" required />
+          <button type="submit">Agregar Final</button>
+          <div id="resultado"></div>
+        </form>
+      </section>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/logoutAlumno.js"></script>
+  </body>
+</html>

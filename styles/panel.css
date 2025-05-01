@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1.5rem;
+}
+
+.banner {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #062241;
+  width: fit-content;
+  min-width: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-header {
+  background-color: #2d67a3;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.banner-article {
+  padding: 30px 50px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+
+table {
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+}
+
+th {
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+}
+
+td {
+  padding: 0.5rem 0.5rem;
+  vertical-align: top;
+}
+
+button {
+  background-color: #2d67a3;
+  color: white;
+  border: none;
+  padding: 0.5rem 10rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: aliceblue 1px solid;
+}
+
+button:hover {
+  background-color: #235285;
+}

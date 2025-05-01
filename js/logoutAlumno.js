@@ -9,5 +9,5 @@ function cerrarSesion() {
         document.cookie = name + "=;expires=" + new Date(0).toUTCString();
     });
 
-    window.location.replace("/router/alumnos.html"); 
+    window.location.replace("/index.html"); 
 }

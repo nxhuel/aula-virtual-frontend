@@ -19,16 +19,17 @@ function waitForElement(selector, timeout = 3000) {
 document.addEventListener("DOMContentLoaded", async () => {
     // const userElement = document.getElementById("user-name");
     const credentials = sessionStorage.getItem("credentials");
+    // const apiDeploy = "https://ifts21.up.railway.app/v1/api/auth/user-logged";
+    const api = "http://localhost:8080/v1/api/auth/user-logged";
 
     if (!credentials) {
         console.warn("No hay credenciales. Redirigiendo al login...");
-        // window.location.href = "./router/alumnos.html";
         window.location.replace("/router/alumnos.html");
         return;
     }
 
     try {
-        const response = await fetch("https://ifts21.up.railway.app/v1/api/auth/user-logged", {
+        const response = await fetch(api, {
             method: "GET",
             headers: {
                 "Authorization": `Basic ${credentials}`

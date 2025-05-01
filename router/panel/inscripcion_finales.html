@@ -18,14 +18,6 @@
     <title>IFTS21</title>
   </head>
   <body>
-    <script>
-      const roles = JSON.parse(sessionStorage.getItem("roles"));
-
-      if (!roles.includes("STUDENT")) {
-        alert("Acceso denegado");
-        window.location.href = "/router/alumnos.html";
-      }
-    </script>
     <div id="app">
       <!-- panelHeader -->
       <div id="panelHeader"></div>
@@ -39,15 +31,29 @@
     </div>
     <main>
       <div class="banner">
-        <div class="banner-header"></div>
-        <article class="banner-article">
-          BIENVENIDO AL SISTEMA ALUMNOS <br />
-          DEL IFTS21
-        </article>
+        <div class="banner-header">INSCRIPCION A FINALES</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Año</th>
+              <th>Cuatrimestre</th>
+              <th>Materia</th>
+              <th>Profesor</th>
+              <th>Seleccionar</th>
+            </tr>
+          </thead>
+          <tbody id="examsTableBody">
+            <!-- Carga dinamica en consultaMateriasInsciptas.js -->
+          </tbody>
+        </table>
       </div>
+
+      <button onclick="enviarFinales()">INSCRIBIR</button>
     </main>
   </body>
 
   <script src="/js/panel.js"></script>
   <script src="/js/logoutAlumno.js"></script>
+  <!-- <script src="/js/inscripcionMaterias.js"></script> -->
 </html>

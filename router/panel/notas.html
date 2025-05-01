@@ -9,6 +9,7 @@
     <!-- exporting styles -->
     <link rel="stylesheet" href="/components/panelHeader/panelHeader.css" />
     <link rel="stylesheet" href="/styles/panel.css" />
+    <link rel="stylesheet" href="/styles/tablaNotas.css">
 
     <link
       rel="shortcut icon"
@@ -18,14 +19,6 @@
     <title>IFTS21</title>
   </head>
   <body>
-    <script>
-      const roles = JSON.parse(sessionStorage.getItem("roles"));
-
-      if (!roles.includes("STUDENT")) {
-        alert("Acceso denegado");
-        window.location.href = "/router/alumnos.html";
-      }
-    </script>
     <div id="app">
       <!-- panelHeader -->
       <div id="panelHeader"></div>
@@ -39,15 +32,27 @@
     </div>
     <main>
       <div class="banner">
-        <div class="banner-header"></div>
-        <article class="banner-article">
-          BIENVENIDO AL SISTEMA ALUMNOS <br />
-          DEL IFTS21
-        </article>
+        <div class="banner-header">CONSULTA DE NOTAS</div>
+        <table class="notesTable">
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Materia</th>
+              <th>Fecha Cursada</th>
+              <th>Nota Cursada</th>
+              <th>Fecha Final</th>
+              <th>Nota Final</th>
+            </tr>
+          </thead>
+          <tbody id="notesTableBody">
+            <!-- Carga dinamica en consultarMaterias.js -->
+          </tbody>
+        </table>
       </div>
     </main>
   </body>
 
   <script src="/js/panel.js"></script>
   <script src="/js/logoutAlumno.js"></script>
+  <script src="/js/consultaNotas.js"></script>
 </html>

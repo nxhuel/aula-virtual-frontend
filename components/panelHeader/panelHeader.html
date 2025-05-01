@@ -1,37 +1,65 @@
 <!-- panelHeader.html -->
 <header>
-    <div class="header-container">
-      <div class="header-main">
-        <div class="header-img">
-          <img src="/assets/images/logo-ifts.png" alt="Logo" />
-        </div>
-
-        <div class="header-text">
-          <p>
-            <span class="header-main-title"
-              >INSTITUTO DE FORMACIÓN TÉCNICA SUPERIOR N°21
-            </span>
-          </p>
-          <p>Ministerio de Educación</p>
-          <p>Gobierno de la Ciudad de Buenos Aires</p>
-        </div>
+  <div class="header-container">
+    <div class="header-main">
+      <div class="header-img">
+        <img src="/assets/images/logo-ifts.png" alt="Logo" />
       </div>
 
-      <nav>
-        <ul class="menu">
-          <li>
-            <a href="#">PANEL</a>
-          </li>
-          <li>
-            <a href="#">MATERIAS</a>
-          </li>
-          <li>
-            <a href="#">FINALES</a>
-          </li>
-          <li><a href="#">NOTAS</a></li>
-          <li><a href="#">CAMBIO CLAVE</a></li>
-          <li><a href="#" onclick="cerrarSesion()">LOGOUT (<span id="user-name">Cargando...</span>)</a></li>
-        </ul>
-      </nav>
+      <div class="header-text">
+        <p>
+          <span class="header-main-title"
+            >INSTITUTO DE FORMACIÓN TÉCNICA SUPERIOR N°21
+          </span>
+        </p>
+        <p>Ministerio de Educación</p>
+        <p>Gobierno de la Ciudad de Buenos Aires</p>
+      </div>
     </div>
-  </header>
+
+    <nav>
+      <ul class="menu-desktop">
+        <li>
+          <a href="/router/panel/panel.html">PANEL</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">MATERIAS</a>
+          <ul class="submenu">
+            <li>
+              <a href="/router/panel/inscripcion_materias.html">
+                Inscripción a Materias</a
+              >
+            </li>
+            <li>
+              <a href="/router/panel/consultar_materias.html">
+                Consultar Materias</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">FINALES</a>
+          <ul class="submenu">
+            <li>
+              <a href="/router/panel/inscripcion_finales.html">
+                Inscripción a Finales</a
+              >
+            </li>
+            <li>
+              <a href="/router/panel/consultar_finales.html">
+                Consultar Finales</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="/router/panel/notas.html">NOTAS</a></li>
+        <li><a href="/router/panel/cambio_clave.html">CAMBIO CLAVE</a></li>
+        <li>
+          <a href="#" onclick="cerrarSesion()"
+            >LOGOUT (<span id="user-name">Cargando...</span>)</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
