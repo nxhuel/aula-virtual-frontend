@@ -7,7 +7,7 @@ document.getElementById("formProfesor").addEventListener("submit", async functio
         username: this.username.value,
         lastname: this.lastname.value,
         password: this.password.value,
-        roleId: [2],
+        roleId: [3],
         professorTitle: this.professorTitle.value,
         contract: this.contract.value,
         contractPdf: this.contractPdf.value
