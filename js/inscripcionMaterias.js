@@ -4,11 +4,14 @@ let enrolledSubjects = [];
 // Obtener las materias existentes desde el backend y mostrarlas en la tabla
 
 document.addEventListener("DOMContentLoaded", () => {
-    const apiSubjects = "http://localhost:8080/v1/api/subject";
-    const apiCourseConsultation = "http://localhost:8080/v1/api/courses";
+    // const apiSubjects = "http://localhost:8080/v1/api/subject";
+    // const apiCourseConsultation = "http://localhost:8080/v1/api/courses";
+
+    const apiSubjectsDeploy = "https://ifts21.up.railway.app/v1/api/subject";
+    const apiCourseConsultationDeploy = "https://ifts21.up.railway.app/v1/api/courses";
 
     // Materias inscritas
-    fetch(apiCourseConsultation, {
+    fetch(apiCourseConsultationDeploy, {
         headers: {
             "Authorization": `Basic ${credentials}`,
             "Content-Type": "application/json"
@@ -21,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enrolledSubjects = inscribed.map(course => course.name);
 
             // Todas las materias existentes (no inscriptas)
-            return fetch(apiSubjects, {
+            return fetch(apiSubjectsDeploy, {
                 headers: {
                     "Authorization": `Basic ${credentials}`,
                     "Content-Type": "application/json"
@@ -58,7 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Metodo para enviar las materias seleccionadas al backend
 function enviarMaterias() {
-    const apiSubjectInscribed = "http://localhost:8080/v1/api/courses";
+    // const apiSubjectInscribed = "http://localhost:8080/v1/api/courses";
+    const apiSubjectInscribedDeploy = "https://ifts21.up.railway.app/v1/api/courses";
 
     const selectedSubjects = Array.from(document.querySelectorAll('input[name="subject"]:checked'))
         .map(input => parseInt(input.value));
@@ -68,7 +72,7 @@ function enviarMaterias() {
         return;
     }
 
-    fetch(apiSubjectInscribed, {
+    fetch(apiSubjectInscribedDeploy, {
         method: 'POST',
         headers: {
             "Authorization": `Basic ${credentials}`,

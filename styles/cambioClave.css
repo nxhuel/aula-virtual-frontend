@@ -1,11 +1,4 @@
-.banner {
-  background-color: #091f38;
-  border: 2px solid #999;
-  border-radius: 8px;
-  width: 400px;
-  overflow: hidden;
-}
-
+/* mobile */
 .banner-header {
   background-color: #4989c7;
   padding: 16px;
@@ -35,8 +28,8 @@ input[type="password"] {
 }
 
 label {
-    width: 100%;
-    text-align: start;
+  width: 100%;
+  text-align: start;
   font-weight: lighter;
   margin-bottom: -8px;
   font-size: 14px;
@@ -60,4 +53,16 @@ button[type="submit"]:hover {
 #resultado {
   margin-top: 10px;
   font-size: 14px;
+}
+
+/* tablet - desktop */
+
+@media (min-width: 1024px) {
+  .banner {
+    background-color: #091f38;
+    border: 2px solid #999;
+    border-radius: 8px;
+    width: 400px;
+    overflow: hidden;
+  }
 }

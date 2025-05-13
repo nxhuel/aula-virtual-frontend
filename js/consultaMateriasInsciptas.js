@@ -1,9 +1,10 @@
 const credentials = sessionStorage.getItem("credentials");
 
 document.addEventListener("DOMContentLoaded", () => {
-    const apiCourseConsultation = "http://localhost:8080/v1/api/courses";
+    // const apiCourseConsultation = "http://localhost:8080/v1/api/courses";
+    const apiCourseConsultationDeploy = "https://ifts21.up.railway.app/v1/api/courses";
 
-    fetch(apiCourseConsultation, {
+    fetch(apiCourseConsultationDeploy, {
         method: 'GET',
         headers: {
             "Authorization": `Basic ${credentials}`,

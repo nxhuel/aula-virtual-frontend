@@ -32,24 +32,28 @@
     <main>
       <div class="banner">
         <div class="banner-header">INSCRIPCION A CURSOS</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Codigo</th>
-              <th>Año</th>
-              <th>Cuatrimestre</th>
-              <th>Materia</th>
-              <th>Profesor</th>
-              <th>Seleccionar</th>
-            </tr>
-          </thead>
-          <tbody id="subjectsTableBody">
-            <!-- Carga dinamica en consultaMateriasInsciptas.js -->
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Codigo</th>
+                <th>Año</th>
+                <th>Cuatrimestre</th>
+                <th>Materia</th>
+                <th>Profesor</th>
+                <th>Seleccionar</th>
+              </tr>
+            </thead>
+            <tbody id="subjectsTableBody">
+              <!-- Carga dinamica en consultaMateriasInsciptas.js -->
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <button onclick="enviarMaterias()">INSCRIBIR</button>
+      <div class="btn-container">
+        <button onclick="enviarMaterias()">INSCRIBIR</button>
+      </div>
     </main>
   </body>
 

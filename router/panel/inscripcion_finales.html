@@ -32,28 +32,30 @@
     <main>
       <div class="banner">
         <div class="banner-header">INSCRIPCION A FINALES</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Codigo</th>
-              <th>Año</th>
-              <th>Cuatrimestre</th>
-              <th>Materia</th>
-              <th>Profesor</th>
-              <th>Seleccionar</th>
-            </tr>
-          </thead>
-          <tbody id="examsTableBody">
-            <!-- Carga dinamica en consultaMateriasInsciptas.js -->
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Carrera</th>
+                <th>Materia</th>
+                <th>Fecha de Final</th>
+                <th>Seleccionar</th>
+              </tr>
+            </thead>
+            <tbody id="examsTableBody">
+              <!-- Carga dinamica en consultaMateriasInsciptas.js -->
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <button onclick="enviarFinales()">INSCRIBIR</button>
+      <div class="btn-container">
+        <button onclick="enviarFinales()">INSCRIBIR</button>
+      </div>
     </main>
   </body>
 
   <script src="/js/panel.js"></script>
   <script src="/js/logoutAlumno.js"></script>
-  <!-- <script src="/js/inscripcionMaterias.js"></script> -->
+  <script src="/js/inscripcionExamenFinal.js"></script>
 </html>

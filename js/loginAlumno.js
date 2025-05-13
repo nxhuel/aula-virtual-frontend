@@ -8,11 +8,11 @@ form.addEventListener("submit", async (e) => {
     const password = document.getElementById("clave").value;
     const credentials = btoa(`${dni}:${password}`);
 
-    // const apiDeploy = "https://ifts21.up.railway.app/v1/api/auth/user-logged";
-    const api = "http://localhost:8080/v1/api/auth/user-logged";
+    const apiDeploy = "https://ifts21.up.railway.app/v1/api/auth/user-logged";
+    // const api = "http://localhost:8080/v1/api/auth/user-logged";
 
     try {
-        const response = await fetch(api, {
+        const response = await fetch(apiDeploy, {
             method: "GET",
             headers: {
                 "Authorization": `Basic ${credentials}`
@@ -25,7 +25,8 @@ form.addEventListener("submit", async (e) => {
 
         const user = await response.json();
         sessionStorage.setItem("credentials", credentials);
-        sessionStorage.setItem("roles", user.roles);
+        // sessionStorage.setItem("roles", user.roles);
+        sessionStorage.setItem("roles", JSON.stringify(user.roles));
 
         if(user.roles.includes("ADMIN") && user.roles.includes("PROFESSOR")) {
             window.location.href = "./administracion/dashboard.html";

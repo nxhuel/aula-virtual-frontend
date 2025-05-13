@@ -59,10 +59,73 @@
     </aside>
 
     <main class="dashboard">
-      <div class="dashboard-title">
-        <h1>BIENVENIDO/A AL PANEL DE ADMIN</h1>
-      </div>
+      <!-- Dar de alta Alumno -->
+      <section class="card">
+        <h1>Alta de Alumno</h1>
+        <form id="formAlumno">
+          <input type="text" name="dni" placeholder="DNI (*)" required />
+          <input type="text" name="legajo" placeholder="Legajo (*)" required />
+          <input type="text" name="username" placeholder="Nombre (*)" required />
+          <input type="text" name="lastname" placeholder="Apellido (*)" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña (*)" 
+            required
+          />
+          <select id="academicPlan" required>
+            <option value="">Carrera (*)</option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN
+            </option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS
+            </option>
+            <option
+              value="TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL"
+            >
+              TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL
+            </option>
+          </select>
+          <button type="submit">Crear Alumno</button>
+          <div id="resultadoEstudianteCreado"></div>
+        </form>
+      </section>
+
+      <!-- Dar de alta profesores -->
+      <section class="card">
+        <h1>Alta de Profesor</h1>
+        <form id="formProfesor">
+          <input type="text" name="dni" placeholder="DNI (*)" required />
+          <input type="text" name="legajo" placeholder="Legajo (*)" required />
+          <input type="text" name="username" placeholder="Nombre (*)" required />
+          <input type="text" name="lastname" placeholder="Apellido (*)" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          />
+          <input
+            type="text"
+            name="professorTitle"
+            placeholder="Título (*)"
+            required
+          />
+          <input type="text" name="contract" placeholder="Contrato (PartTime - FullTime - Etc.)" />
+          <input
+            type="text"
+            name="contractPdf"
+            placeholder="Archivo contrato PDF"
+          />
+          <div id="resultadoProfesorCreado"></div>
+          <button type="submit">Crear Profesor</button>
+        </form>
+      </section>
     </main>
+
+    <script src="/js/agregarAlumno.js"></script>
+    <script src="/js/agregarDocente.js"></script>
     <script src="/js/logoutAlumno.js"></script>
   </body>
 </html>

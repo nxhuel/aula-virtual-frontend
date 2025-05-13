@@ -32,23 +32,27 @@
     <main>
       <div class="banner">
         <div class="banner-header">CONSULTA DE FINALES</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Nro. Inscripción</th>
-              <th>Fecha Final</th>
-              <th>Materia</th>
-              <th>Profesor</th>
-              <th>Fecha de Inscripción</th>
-            </tr>
-          </thead>
-          <tbody id="examnsTableBody">
-            <!-- Carga dinamica en consultarMaterias.js -->
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Nro. Inscripción</th>
+                <th>Fecha Final</th>
+                <th>Materia</th>
+                <th>Profesor</th>
+                <th>Fecha de Inscripción</th>
+              </tr>
+            </thead>
+            <tbody id="examsTableBody">
+              <!-- Carga dinamica en consultarMaterias.js -->
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <button onclick="imprimirComprobante()">Imprimir Comprobante</button>
+      <div class="btn-container">
+        <button onclick="imprimirComprobante()">Imprimir Comprobante</button>
+      </div>
     </main>
   </body>
 

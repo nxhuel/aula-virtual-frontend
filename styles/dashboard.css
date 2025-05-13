@@ -3,11 +3,23 @@ body {
   margin: 0;
   background-color: antiquewhite;
   color: white;
-
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto;
   height: 100vh;
+}
+
+.dashboard-title {
+  background-color: #05182e;
+  color: antiquewhite;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 .sidebar {
@@ -25,6 +37,33 @@ body {
   text-align: center;
 }
 
+.side-bar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  text-align: start;
+}
+
+.sidebar svg {
+  width: 22px;
+  height: 22px;
+  color: white;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.sidebar svg:hover {
+  transform: scale(1.2);
+  color: #4180c5;
+}
 
 .sidebar button {
   background-color: #dc3545;

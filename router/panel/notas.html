@@ -9,7 +9,7 @@
     <!-- exporting styles -->
     <link rel="stylesheet" href="/components/panelHeader/panelHeader.css" />
     <link rel="stylesheet" href="/styles/panel.css" />
-    <link rel="stylesheet" href="/styles/tablaNotas.css">
+    <link rel="stylesheet" href="/styles/tablaNotas.css" />
 
     <link
       rel="shortcut icon"
@@ -33,21 +33,23 @@
     <main>
       <div class="banner">
         <div class="banner-header">CONSULTA DE NOTAS</div>
-        <table class="notesTable">
-          <thead>
-            <tr>
-              <th>Año</th>
-              <th>Materia</th>
-              <th>Fecha Cursada</th>
-              <th>Nota Cursada</th>
-              <th>Fecha Final</th>
-              <th>Nota Final</th>
-            </tr>
-          </thead>
-          <tbody id="notesTableBody">
-            <!-- Carga dinamica en consultarMaterias.js -->
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table class="notesTable">
+            <thead>
+              <tr>
+                <th>Año</th>
+                <th>Materia</th>
+                <th>Fecha Cursada</th>
+                <th>Nota Cursada</th>
+                <th>Fecha Final</th>
+                <th>Nota Final</th>
+              </tr>
+            </thead>
+            <tbody id="notesTableBody">
+              <!-- Carga dinamica en consultarMaterias.js -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </main>
   </body>

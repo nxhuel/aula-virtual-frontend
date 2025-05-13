@@ -59,10 +59,132 @@
     </aside>
 
     <main class="dashboard">
-      <div class="dashboard-title">
-        <h1>BIENVENIDO/A AL PANEL DE ADMIN</h1>
-      </div>
+      <!-- Agregar Materia -->
+      <section class="card">
+        <h1>AGREGAR MATERIA</h1>
+        <form id="subjectForm">
+          <label for="academicPlan">Nombre de la Carrera</label>
+          <select id="academicPlan" required>
+            <option value="">Carrera</option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN
+            </option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS
+            </option>
+            <option
+              value="TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL"
+            >
+              TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL
+            </option>
+          </select>
+          <label for="name">Nombre de la Materia</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ej: Programación I"
+            required
+          />
+          <label for="year">Año y Periodo de la Materia</label>
+          <select id="year" required>
+            <option value="">Año</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select id="period" required>
+            <option value="">Periodo</option>
+            <option value="1">1° Cuatrimestre</option>
+            <option value="2">2° Cuatrimestre</option>
+            <option value="A">Anual</option>
+          </select>
+          <label for="startDateCourse">Inicio de Cursada</label>
+          <input type="date" id="startDateCourse" required />
+          <label for="finalDateCourse">Fin de Cursada</label>
+          <input type="date" id="finalDateCourse" required />
+          <label for="dniProfessor">DNI del Profesor/a</label>
+          <input
+            type="number"
+            id="dniProfessor"
+            placeholder="Ej: 42136223"
+            required
+          />
+          <button type="submit">Agregar Materia</button>
+          <div id="resultado"></div>
+        </form>
+      </section>
+
+      <!-- Cargar Examen Final -->
+      <section class="card">
+        <h1>CARGAR EXAMEN FINAL</h1>
+        <form id="finalExamForm">
+          <label for="academicPlanEnum">Nombre de la Carrera</label>
+          <select id="academicPlanEnum" required>
+            <option value="">Carrera</option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS_VIEJO_PLAN
+            </option>
+            <option value="TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS">
+              TECNICO_SUPERIOR_EN_ANALISIS_DE_SISTEMAS
+            </option>
+            <option
+              value="TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL"
+            >
+              TECNICO_SUPERIOR_EN_ADMINISTRACION_PUBLICA_CON_ORIENTACION_MUNICIPAL
+            </option>
+          </select>
+          <label for="subject">Nombre de la Materia Existente</label>
+          <input
+            type="text"
+            id="subject"
+            placeholder="Ej: Programación I"
+            required
+          />
+          <label for="finalDate">Fecha de Final</label>
+          <input type="date" id="finalDate" required />
+          <button type="submit">Agregar Examen Final</button>
+          <div id="resultadoExamenFinal"></div>
+        </form>
+      </section>
+
+      <!-- Cargar Nota -->
+      <section class="card">
+        <h1>CARGAR NOTA</h1>
+        <form id="notaForm">
+          <label for="dni">DNI de Alumno</label>
+          <input type="number" id="dni" placeholder="Ej: 42136223" required />
+          <label for="subjectInscribed">Nombre de la Materia</label>
+          <input
+            type="text"
+            id="subjectInscribed"
+            placeholder="Ej: Programación I"
+            required
+          />
+          <label for="finalCourseGrade">Nota de Cursada</label>
+          <input
+            type="number"
+            id="finalCourseGrade"
+            placeholder="Nota cursada (0 a 10)"
+            required
+            min="0"
+            max="10"
+          />
+          <label for="finalExamGrade">Nota de Final</label>
+          <input
+            type="number"
+            id="finalExamGrade"
+            placeholder="Nota final (0 a 10)"
+            required
+            min="0"
+            max="10"
+          />
+          <button type="submit">Cargar Nota</button>
+          <div id="resultadoNota"></div>
+        </form>
+      </section>
     </main>
+
+    <script src="/js/dashboard.js"></script>
     <script src="/js/logoutAlumno.js"></script>
   </body>
 </html>
